@@ -1,0 +1,8 @@
+{
+  "name": "setup-environment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/aterteryan/setup-environment.git",
+  "author": "Arthur Terteryan <arthur.terteryan@gmail.com>",
+  "license": "MIT"
+}
