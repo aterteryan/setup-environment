@@ -4,14 +4,23 @@
   "main": "index.js",
   "repository": "https://github.com/aterteryan/setup-environment.git",
   "scripts": {
-    "prestart": "node buildScripts/startMessage",
-    "start": "node buildScripts/srcServer.js"
+    "prestart": "babel-node buildScripts/startMessage",
+    "start": "npm-run-all --parallel security-check open:src",
+    "open:src": "babel-node buildScripts/srcServer.js",
+    "security-check": "nsp check"
   },
   "author": "Arthur Terteryan <arthur.terteryan@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-latest": "^6.24.1",
+    "babel-register": "^6.26.0",
     "chalk": "^2.3.2",
     "express": "^4.16.3",
+    "npm-run-all": "^4.1.2",
+    "nsp": "^3.2.1",
     "open": "^0.0.5"
   }
 }
