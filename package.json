@@ -4,5 +4,9 @@
   "main": "index.js",
   "repository": "https://github.com/aterteryan/setup-environment.git",
   "author": "Arthur Terteryan <arthur.terteryan@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "express": "^4.16.3",
+    "open": "^0.0.5"
+  }
 }
