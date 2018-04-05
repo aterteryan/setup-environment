@@ -3,9 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/aterteryan/setup-environment.git",
+  "scripts": {
+    "prestart": "node buildScripts/startMessage",
+    "start": "node buildScripts/srcServer.js"
+  },
   "author": "Arthur Terteryan <arthur.terteryan@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "chalk": "^2.3.2",
     "express": "^4.16.3",
     "open": "^0.0.5"
   }
